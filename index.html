@@ -124,6 +124,14 @@
 
   .foot{font-size:12px;color:var(--ink3);border-top:1px solid var(--line);padding-top:20px;margin-top:8px;line-height:1.7}
 
+  .newtag{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--c1);font-weight:600}
+  .newtag::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--c1)}
+  .stat{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:22px 0 10px}
+  .stat .n{font-size:25px;font-weight:680;letter-spacing:-.02em;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1.08}
+  .stat .n .u{font-size:13px;color:var(--ink3);font-weight:600;margin-left:1px}
+  .stat .l{font-size:11.5px;color:var(--ink3);margin-top:6px;line-height:1.45}
+  @media(max-width:880px){.stat{grid-template-columns:1fr 1fr}}
+
   @media (max-width:880px){
     .wrap{grid-template-columns:1fr}
     aside{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line)}
@@ -143,8 +151,10 @@
     </div>
     <div class="kick" data-en="Competitor file" data-zh="竞品档案">Competitor file</div>
     <h1 data-en="Airwallex · Product Moves &amp; Strategy" data-zh="Airwallex · 产品动作与战略">Airwallex · Product Moves &amp; Strategy</h1>
-    <div class="meta" data-en="Specifics first, then the strategy, then the read. As of 2026-06-20" data-zh="先讲具体动作,再讲战略,最后给判断。截至 2026-06-20">Specifics first, then the strategy, then the read. As of 2026-06-20</div>
+    <div class="meta" data-en="Specifics first, then the strategy, then the read. As of 2026-06-26" data-zh="先讲具体动作,再讲战略,最后给判断。截至 2026-06-26">Specifics first, then the strategy, then the read. As of 2026-06-26</div>
     <nav id="nav">
+      <div class="navpart" data-en="Latest" data-zh="最新">Latest</div>
+      <a data-sec="new"><span class="n">●</span><span data-en="Series H · T:0 · Airi (25 Jun)" data-zh="H 轮 · T:0 · Airi(6月25日)">Series H · T:0 · Airi (25 Jun)</span></a>
       <a data-sec="0"><span class="n">00</span><span data-en="Executive snapshot" data-zh="一页速览">Executive snapshot</span></a>
       <div class="navpart" data-en="Part I · The moves" data-zh="第一部分 · 具体动作">Part I · The moves</div>
       <a data-sec="1"><span class="n">01</span><span data-en="Timeline: the moves in order" data-zh="时间线:按顺序的动作">Timeline: the moves in order</span></a>
@@ -167,6 +177,38 @@
 
   <!-- ================= ENGLISH ================= -->
   <main id="content-en" style="display:none">
+
+    <section data-sec="new">
+      <div class="secnum"><span class="newtag">New · 2026-06-25</span></div>
+      <h2>Airwallex bets the company on agentic finance</h2>
+      <p class="thesis">On 25 June 2026 Airwallex raised a <b>US$320M Series H at a US$11bn valuation</b> and used the moment to reframe what it is: no longer cross-border payments, but <b>autonomous finance</b>. The headline launch, <b>T:0</b>, is an AI-native platform that runs a company's entire finance function, from day zero. Founder Jack Zhang called it "the most consequential moment in the history of global finance."</p>
+
+      <div class="stat">
+        <div><div class="n">US$11<span class="u">bn</span></div><div class="l">Valuation, up from US$8bn (Dec 2025)</div></div>
+        <div><div class="n">US$320<span class="u">M</span></div><div class="l">Series H, led by Addition</div></div>
+        <div><div class="n">US$1.3<span class="u">bn</span></div><div class="l">Annualised revenue, +74% YoY (Mar 2026)</div></div>
+        <div><div class="n">676<span class="u">k+</span></div><div class="l">Businesses on the platform</div></div>
+      </div>
+
+      <div class="callout">The pitch: replace the US$2,000 to US$8,000 a month a growing startup spends on a part-time bookkeeper, tax help and a fractional CFO with four AI agents. No data migration, "CFO-grade books" from day one. Private beta now, wider in "the coming weeks."</div>
+
+      <h3>T:0 · a finance team of four agents</h3>
+      <div class="grid2">
+        <div class="card"><div class="t">The Accountant</div><div class="d">Daily transaction categorisation and reconciliation, ledgers kept continuously current instead of a month-end scramble. Stands in for a <b>US$400 to US$1,500/mo</b> bookkeeper.</div></div>
+        <div class="card"><div class="t">The Scout</div><div class="d">Keeps a live profile of the business (structure, accounts, activity) so the other agents always reason from current context.</div></div>
+        <div class="card"><div class="t">The CFO</div><div class="d">Real-time insight and performance monitoring, in the shape of a <b>US$1,000 to US$4,000/mo</b> fractional CFO. It flags, it does not decide strategy or fundraising.</div></div>
+        <div class="card"><div class="t">The Integrator</div><div class="d">Wires up banking, payroll, cards, billing and payments with no data migration, so the books are live from setup.</div></div>
+      </div>
+
+      <h3>Airi · the consumer side of the same bet</h3>
+      <p><b>Airi</b> is an agentic consumer wallet. It launches on Airwallex's one-click checkout (claimed up to a 14% lift in checkout conversion in early testing, not independently audited) and is meant to grow into delegated agent payments, spend limits, permission controls and multi-currency balances. It is the buying half of "agentic commerce," paired with T:0's autonomous books.</p>
+
+      <h3>The read for WorldFirst</h3>
+      <p>Airwallex is climbing the stack: from moving money to running the books. The moat it leans on is the part software alone cannot fake: <b>85+ licences, 160+ local payment methods, 200+ countries</b>. The signal for WF is that cheap, fast cross-border is now table stakes, and the next contest is embedded, autonomous finance for the same SME. Before over-reacting, note the caveats: T:0 is private beta with no general-availability date, the 14% figure is unaudited, and tax sign-off plus final accountability still sit with a human. Fuller read in section 12 below.</p>
+
+      <div class="foot">Sources: <a class="src" href="https://www.airwallex.com/global/newsroom/airwallex-secures-320-million-in-series-h-funding-valuation-hits-11-billion" target="_blank" rel="noopener">Airwallex newsroom</a> · <a class="src" href="https://www.businesswire.com/news/home/20260625434997/en/" target="_blank" rel="noopener">Business Wire</a> · <a class="src" href="https://www.cnbc.com/2026/06/26/airwallex-series-h-funding-11-billion-valuation-ai-finance.html" target="_blank" rel="noopener">CNBC</a>. Reported 2026-06-25/26.</div>
+    </section>
+    <hr class="hr">
 
     <section class="lead" data-sec="0">
       <div class="how">
@@ -200,6 +242,7 @@
         <div class="row"><div class="d">2026-05</div><div class="t"><span class="dot d-watch"></span> New funding round reported at ~US$12bn valuation (Axios / Reuters, not officially confirmed).</div></div>
         <div class="row"><div class="d">2026-06-04</div><div class="t">Acquires <b>Leapfin</b> (AI revenue recognition), extending into the finance back office.</div></div>
         <div class="row big"><div class="d">2026-06-18</div><div class="t"><b>AgentOS launches</b> the frontier: external AI agents can run an Airwallex account. Claude-first.</div></div>
+        <div class="row big"><div class="d">2026-06-25</div><div class="t"><b>Series H:</b> US$320M at US$11bn (Addition-led). Launches <b>T:0</b> (four AI agents run the whole finance function) and <b>Airi</b> (agentic consumer wallet). Reframes the company around autonomous finance.</div></div>
       </div>
     </section>
 
@@ -415,6 +458,38 @@
   <!-- ================= 中文 ================= -->
   <main id="content-zh">
 
+    <section data-sec="new">
+      <div class="secnum"><span class="newtag">最新 · 2026-06-25</span></div>
+      <h2>Airwallex 押注"代理化财务"</h2>
+      <p class="thesis">2026 年 6 月 25 日,Airwallex 完成 <b>US$320M H 轮融资,估值达 US$11bn</b>,并借此重新定义自己:不再只是跨境支付,而是<b>自主财务(autonomous finance)</b>。核心新品 <b>T:0</b> 是一个 AI 原生平台,从第零天起接管一家公司的整个财务职能。创始人 Jack Zhang 称这是"全球金融史上最重要的时刻"。</p>
+
+      <div class="stat">
+        <div><div class="n">US$11<span class="u">bn</span></div><div class="l">最新估值,较 2025 年 12 月的 US$8bn 上升</div></div>
+        <div><div class="n">US$320<span class="u">M</span></div><div class="l">H 轮融资,Addition 领投</div></div>
+        <div><div class="n">US$1.3<span class="u">bn</span></div><div class="l">年化收入,同比 +74%(2026 年 3 月)</div></div>
+        <div><div class="n">676<span class="u">k+</span></div><div class="l">平台上的企业客户</div></div>
+      </div>
+
+      <div class="callout">卖点:一家成长期初创公司每月要在兼职记账、报税和外包 CFO 上花 US$2,000 到 US$8,000,T:0 用四个 AI 智能体把这块替换掉。无需数据迁移,从第一天起就给"CFO 级账本"。目前私测,未来"几周内"扩大开放。</div>
+
+      <h3>T:0 · 四个智能体组成的财务团队</h3>
+      <div class="grid2">
+        <div class="card"><div class="t">The Accountant(会计)</div><div class="d">每天做交易归类与对账,账本保持实时更新,而不是月末突击。替代 <b>每月 US$400 到 US$1,500</b> 的记账。</div></div>
+        <div class="card"><div class="t">The Scout(侦察)</div><div class="d">维护一份实时的公司画像(架构、账户、经营活动),让其他智能体始终基于当前情境推理。</div></div>
+        <div class="card"><div class="t">The CFO(首席财务官)</div><div class="d">实时洞察与经营监控,相当于 <b>每月 US$1,000 到 US$4,000</b> 的外包 CFO。它只做提示,不替你定战略或融资。</div></div>
+        <div class="card"><div class="t">The Integrator(集成)</div><div class="d">打通银行、薪酬、卡、账单与收付款,无需数据迁移,账本从搭建起就是活的。</div></div>
+      </div>
+
+      <h3>Airi · 同一赌注的消费端</h3>
+      <p><b>Airi</b> 是一个代理化消费钱包。上线时先接入 Airwallex 的一键结账(早期测试称结账转化率最高提升 14%,未经独立审计),后续将扩展到"代理代付、消费限额、权限控制、多币种余额"。它是"代理化商务(agentic commerce)"的买方一侧,与 T:0 的自主账本相互配对。</p>
+
+      <h3>对 WorldFirst 的判断</h3>
+      <p>Airwallex 正沿价值链向上走:从"搬钱"到"管账"。它依托的护城河,恰恰是纯软件做不出来的部分:<b>85+ 牌照、160+ 本地支付方式、200+ 国家</b>。对 WF 的信号是:又快又便宜的跨境已是入场券,下一个战场是面向同一批 SME 的"内嵌式、自主化财务"。不必过度反应的几点:T:0 仍是私测、无正式开放时间;14% 为未审计数据;报税签字与最终责任仍在人这一侧。完整解读见下方第 12 节。</p>
+
+      <div class="foot">来源:<a class="src" href="https://www.airwallex.com/global/newsroom/airwallex-secures-320-million-in-series-h-funding-valuation-hits-11-billion" target="_blank" rel="noopener">Airwallex 官方新闻室</a> · <a class="src" href="https://www.businesswire.com/news/home/20260625434997/en/" target="_blank" rel="noopener">Business Wire</a> · <a class="src" href="https://www.cnbc.com/2026/06/26/airwallex-series-h-funding-11-billion-valuation-ai-finance.html" target="_blank" rel="noopener">CNBC</a>。报道于 2026-06-25/26。</div>
+    </section>
+    <hr class="hr">
+
     <section class="lead" data-sec="0">
       <div class="how">
         <div class="b"><div class="t">第一部分 · 具体动作</div><div class="d">他们到底发布了什么,按顺序、有细节。这是真实的产品路线图。</div></div>
@@ -447,6 +522,7 @@
         <div class="row"><div class="d">2026-05</div><div class="t"><span class="dot d-watch"></span> 据报新一轮融资,估值约 120 亿美元(Axios / 路透,未官宣)。</div></div>
         <div class="row"><div class="d">2026-06-04</div><div class="t">收购 <b>Leapfin</b>(AI 收入确认),向财务后台延伸。</div></div>
         <div class="row big"><div class="d">2026-06-18</div><div class="t"><b>AgentOS 上线</b>,前沿:外部 AI 代理可操作 Airwallex 账户。Claude 优先。</div></div>
+        <div class="row big"><div class="d">2026-06-25</div><div class="t"><b>H 轮:</b>3.2 亿美元,估值 110 亿(Addition 领投)。发布 <b>T:0</b>(四个 AI 智能体接管整个财务职能)与 <b>Airi</b>(代理化消费钱包)。公司整体转向"自主财务"。</div></div>
       </div>
     </section>
 
